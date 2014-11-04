@@ -6,7 +6,7 @@ server {
 {% endif %}
 
 {% for k,v in item.server.iteritems() %}
-{% if k != 'locations' and k != 'file_name' %}
+{% if k != 'locations' %}
 {{ k }} {{ v }};
 {% endif %}
 {% endfor %}
